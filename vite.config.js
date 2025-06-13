@@ -10,6 +10,10 @@ export default defineConfig({
     ElementPlus({}),
     vueJsx()
   ],
+  server: {
+    port: 4200,
+    host: 'homebots.localhost'
+  },
   resolve: {
     alias: {
       '~': path.resolve(__dirname, './'),

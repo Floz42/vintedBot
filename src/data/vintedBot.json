@@ -1,0 +1,48 @@
+{
+    "name": "Vinted Bot",
+    "properties": {
+        "keywords": {
+            "label": "Search Keywords",
+            "type": "text",
+            "description": "Keywords to search for on Vinted",
+            "value": ["pokemon", "lot", "cartes"],
+            "required": true
+        },
+        "excludeKeywords": {
+            "label": "Exclude Keywords",
+            "type": "text",
+            "description": "Keywords to exclude from search results",
+            "value": ["100", "20", "50"],
+            "required": false
+        },
+        "minPrice": {
+            "label": "Minimum Price",
+            "type": "number",
+            "description": "Minimum price to filter results",
+            "value": 2,
+            "required": true
+        },
+        "maxPrice": {
+            "label": "Maximum Price",
+            "type": "number",
+            "description": "Maximum price to filter results",
+            "value": 100,
+            "required": true
+        },
+        "totalResults": {
+            "label": "Total Results",
+            "type": "number",
+            "description": "Total number of results to fetch",
+            "value": 10,
+            "required": true
+        },
+        "checkInterval": {
+            "label": "Check Interval (s)",
+            "type": "number",
+            "description": "Interval in seconds to check for new results",
+            "value": 60,
+            "required": true
+        }
+    },
+    "isActive": false
+}
